@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:apionlinequiz/models/question.dart';
-import 'package:apionlinequiz/ui/pages/check_answers.dart';
+import 'package:quizilla/models/question.dart';
+import 'package:quizilla/ui/pages/check_answers.dart';
 
 // ignore: must_be_immutable
 class QuizFinishedPage extends StatelessWidget {
@@ -27,7 +27,7 @@ class QuizFinishedPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Result'),
-        elevation: 0,
+        elevation: 5,
       ),
       body: Container(
         height: double.infinity,

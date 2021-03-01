@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:apionlinequiz/models/category.dart';
-import 'package:apionlinequiz/models/question.dart';
+import 'package:quizilla/models/category.dart';
+import 'package:quizilla/models/question.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:apionlinequiz/ui/pages/quiz_finished.dart';
+import 'package:quizilla/ui/pages/quiz_finished.dart';
 import 'package:html_unescape/html_unescape.dart';
 
 class QuizPage extends StatefulWidget {
@@ -39,7 +39,7 @@ class _QuizPageState extends State<QuizPage> {
         key: _key,
         appBar: AppBar(
           title: Text(widget.category.name),
-          elevation: 0,
+          elevation: 5,
         ),
         body: Stack(
           children: <Widget>[
@@ -57,8 +57,8 @@ class _QuizPageState extends State<QuizPage> {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      CircleAvatar(
-                        backgroundColor: Colors.white70,
+                     CircleAvatar(
+                        backgroundColor: Colors.white60,
                         child: Text("${_currentIndex + 1}"),
                       ),
                       SizedBox(width: 16.0),
@@ -108,7 +108,7 @@ class _QuizPageState extends State<QuizPage> {
                         child: Text(
                           _currentIndex == (widget.questions.length - 1)
                               ? "Submit"
-                              : "Next",
+                              : "Next One",
                           style: MediaQuery.of(context).size.width > 800
                               ? TextStyle(fontSize: 30.0)
                               : null,

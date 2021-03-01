@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:apionlinequiz/models/category.dart';
-import 'package:apionlinequiz/ui/widgets/quiz_options.dart';
+import 'package:quizilla/models/category.dart';
+import 'package:quizilla/ui/widgets/quiz_options.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class HomePage extends StatelessWidget {
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
               fontWeight: FontWeight.w900,
             ),
           ),
-          elevation: 0,
+          elevation: 1,
         ),
         body: Stack(
           children: <Widget>[
@@ -47,12 +47,12 @@ class HomePage extends StatelessWidget {
                 SliverToBoxAdapter(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 8.0),
+                        horizontal: 20.0, vertical: 10.0),
                     child: Text(
                       "Select to Start the Quiz!",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontWeight: FontWeight.w800,
                           fontSize: 16.0),
                     ),
@@ -86,18 +86,18 @@ class HomePage extends StatelessWidget {
     Category category = categories[index];
     return MaterialButton(
       elevation: 1.0,
-      highlightElevation: 1.0,
+      highlightElevation: 2.0,
       onPressed: () => _categoryPressed(context, category),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(50.0),
       ),
-      color: Colors.grey.shade800,
-      textColor: Colors.white70,
+      color: Colors.tealAccent,
+      textColor: Colors.black,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           if (category.icon != null) Icon(category.icon),
-          if (category.icon != null) SizedBox(height: 5.0),
+          if (category.icon != null) SizedBox(height: 10.0),
           AutoSizeText(
             category.name,
             minFontSize: 10.0,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:apionlinequiz/ui/pages/home.dart';
+import 'package:quizilla/ui/pages/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,14 +8,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Open Trivia',
+      title: 'Quizilla',
       theme: ThemeData(
-          primarySwatch: Colors.pink,
-          accentColor: Colors.indigo,
-          fontFamily: "Montserrat",
-          buttonColor: Colors.pink,
+          primarySwatch: Colors.teal,
+          accentColor: Colors.tealAccent,
+          fontFamily: "Joker",
+          buttonColor: Colors.teal,
           buttonTheme: ButtonThemeData(
-              buttonColor: Colors.pink,
+              buttonColor: Colors.teal,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),

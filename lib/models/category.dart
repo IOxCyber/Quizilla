@@ -26,5 +26,4 @@ final List<Category> categories = [
   Category(16, "Vehicles", icon: FontAwesomeIcons.carAlt),
   Category(17, "Comics", icon: FontAwesomeIcons.bookReader),
   Category(18, "Gadgets", icon: FontAwesomeIcons.mobileAlt),
-  Category(19, "Cartoon & Animation", icon: FontAwesomeIcons.kiwiBird),
-];
+ ];

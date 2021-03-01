@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:html_unescape/html_unescape.dart';
-import 'package:apionlinequiz/models/question.dart';
+import 'package:quizilla/models/question.dart';
 
 class CheckAnswersPage extends StatelessWidget {
   final List<Question> questions;

@@ -1,4 +1,4 @@
-name: apionlinequiz
+name: quizilla
 description: A new Flutter project.
 
 version: 1.0.0+1
@@ -25,7 +25,7 @@ flutter:
   uses-material-design: true
 
   fonts:
-    - family: Montserrat
+    - family: Joker
       fonts:
         - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
         - asset: assets/fonts/Montserrat/Montserrat-Italic.ttf

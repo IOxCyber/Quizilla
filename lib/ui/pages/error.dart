@@ -11,7 +11,7 @@ class ErrorPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Error'),
-        elevation: 0,
+        elevation: 10,
       ),
       body: Container(
         height: double.infinity,
@@ -19,8 +19,8 @@ class ErrorPage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Theme.of(context).primaryColor,
-              Theme.of(context).accentColor
+              Theme.of(context).accentColor,
+              Theme.of(context).primaryColor
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter
@@ -38,11 +38,11 @@ class ErrorPage extends StatelessWidget {
                     Text(message,textAlign: TextAlign.center,style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.w500,
-                      color: Colors.red
+                      color: Colors.black
                     ),),
                     SizedBox(height: 20.0),
                     RaisedButton(
-                      child: Text("Try Again"),
+                      child: Text("Try Again Later"),
                       onPressed: ()=> Navigator.pop(context),
                     )
                   ],
