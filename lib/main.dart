@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
       title: 'Quizilla',
       theme: ThemeData(
           primarySwatch: Colors.red,
-          accentColor: Colors.orangeAccent,
+          accentColor: Colors.blueAccent,
           fontFamily: "Montserrat Bold",
           buttonColor: Colors.red,
           buttonTheme: ButtonThemeData(
-              buttonColor: Colors.redAccent,
+              buttonColor: Colors.black,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
