@@ -2,9 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+## Glipmes of project
+![Screenshot_1614600700](https://user-images.githubusercontent.com/40174034/109500971-f652e480-7abc-11eb-8784-f6dfd278126b.png)
+![Screenshot_1614600756](https://user-images.githubusercontent.com/40174034/109500980-f8b53e80-7abc-11eb-892d-7ee7d6b36d52.png)
+![Screenshot_1614601391](https://user-images.githubusercontent.com/40174034/109500982-f94dd500-7abc-11eb-91f8-44682cbad5de.png)
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
