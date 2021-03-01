@@ -67,7 +67,9 @@ class _QuizPageState extends State<QuizPage> {
                           HtmlUnescape().convert(
                               widget.questions[_currentIndex].question),
                           softWrap: true,
-                          style: _questionStyle,
+                          style: MediaQuery.of(context).size.width > 800
+                              ? _questionStyle.copyWith(fontSize: 30.0)
+                              : _questionStyle,
                         ),
                       ),
                     ],
@@ -78,7 +80,12 @@ class _QuizPageState extends State<QuizPage> {
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         ...options.map((option) => RadioListTile(
-                              title: Text(HtmlUnescape().convert("$option")),
+                              title: Text(
+                                HtmlUnescape().convert("$option"),
+                                style: MediaQuery.of(context).size.width > 800
+                                    ? TextStyle(fontSize: 30.0)
+                                    : null,
+                              ),
                               groupValue: _answers[_currentIndex],
                               value: option,
                               onChanged: (value) {
@@ -94,10 +101,18 @@ class _QuizPageState extends State<QuizPage> {
                     child: Container(
                       alignment: Alignment.bottomCenter,
                       child: RaisedButton(
+                        padding: MediaQuery.of(context).size.width > 800
+                            ? const EdgeInsets.symmetric(
+                                vertical: 20.0, horizontal: 64.0)
+                            : null,
                         child: Text(
-                            _currentIndex == (widget.questions.length - 1)
-                                ? "Submit"
-                                : "Next"),
+                          _currentIndex == (widget.questions.length - 1)
+                              ? "Submit"
+                              : "Next",
+                          style: MediaQuery.of(context).size.width > 800
+                              ? TextStyle(fontSize: 30.0)
+                              : null,
+                        ),
                         onPressed: _nextSubmit,
                       ),
                     ),

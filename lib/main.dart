@@ -8,14 +8,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Quizilla',
+      title: 'Open Trivia',
       theme: ThemeData(
-          primarySwatch: Colors.red,
-          accentColor: Colors.blueAccent,
-          fontFamily: "Montserrat Bold",
-          buttonColor: Colors.red,
+          primarySwatch: Colors.pink,
+          accentColor: Colors.indigo,
+          fontFamily: "Montserrat",
+          buttonColor: Colors.pink,
           buttonTheme: ButtonThemeData(
-              buttonColor: Colors.black,
+              buttonColor: Colors.pink,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),

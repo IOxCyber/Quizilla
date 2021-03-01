@@ -62,7 +62,12 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   sliver: SliverGrid(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
+                          crossAxisCount:
+                              MediaQuery.of(context).size.width > 1000
+                                  ? 7
+                                  : MediaQuery.of(context).size.width > 600
+                                      ? 5
+                                      : 3,
                           childAspectRatio: 1.2,
                           crossAxisSpacing: 10.0,
                           mainAxisSpacing: 10.0),
@@ -86,8 +91,8 @@ class HomePage extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
       ),
-      color: Colors.deepOrangeAccent,
-      textColor: Colors.white,
+      color: Colors.grey.shade800,
+      textColor: Colors.white70,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
