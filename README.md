@@ -1,6 +1,6 @@
 # apionlinequiz
 
-A new Flutter project.
+A Flutter quiz app with online API..
 
 ## Glipmes of project
 ![Screenshot_1614600700](https://user-images.githubusercontent.com/40174034/109500971-f652e480-7abc-11eb-8784-f6dfd278126b.png)
